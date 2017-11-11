@@ -18,7 +18,10 @@ public class BasePage {
 	public void verifyTitle(String eTitle)
 	{
 		try
+		
+		
 		{
+			System.out.println("git");
 			WebDriverWait wait = new WebDriverWait(driver,10);
 			wait.until(ExpectedConditions.titleIs(eTitle));
 			Reporter.log("Title is matching"+eTitle,true);
